@@ -1,1 +1,1 @@
-# spanish-debt-clock
+# spanish-debt-counter
