@@ -1,4 +1,4 @@
-# spanish-debt-counter
+# Spanish Debt Counter 
 
 This is a simple script that calculates the public spanish debt using moving averages and linear regressions. Once the data is compiled and calculated it goes on a twitter bot account. It can be seen working at: https://twitter.com/deudapublicaes1
 
