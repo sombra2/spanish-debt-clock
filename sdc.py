@@ -24,7 +24,7 @@ average_variation_per_second = average_variation_per_hour / 3600
 debt = (((datetime.datetime.now() - previous_quarter).total_seconds()) * average_variation_per_second) + previous_quarter_debt
 debt_readable = '{0:,}'.format(int(debt)).replace(',', '.') # adding the thousands separators for better readability
 percentage = round((int(debt) * 100) / gdp, 2)
-percentage_readable = '{0:,}'.format(percentage).replace(',', '.') # adding the thousands separators for better readability
+percentage_readable = '{0:,}'.format(percentage).replace('.', ',') # adding the thousands separators for better readability
 debt_per_inhabitant = round(int((debt / inhabitants)),2)
 debt_per_inhabitant_readable = '{0:,}'.format(debt_per_inhabitant).replace(',', '.') # adding the thousands separators for better readability
 
@@ -45,4 +45,4 @@ api = tweepy.API(auth)
 api.update_status(status = '{} € total | '
                            '{} € por habitante | '
                            '{}% del PIB | '
-                           '{}'.format(debt_readable, debt_per_inhabitant_readable, percentage_readable, now))
+                           '{} #DeudaPublica'.format(debt_readable, debt_per_inhabitant_readable, percentage_readable, now))
