@@ -14,7 +14,7 @@ Until the moment I figure out a public API with the current debt date (please do
 
 - `previous_quarter`: the date of the last quarter end from which the latest published real debt figures have been gathered `(YYYY, MM, DD)`
 
-- `previous_quarter_debt`: the actual figure of the published debt for the last quarter
+- `previous_quarter_debt`: the actual figure of the published debt for the last quarter ([link](https://datosmacro.expansion.com/deuda/espana))
 
 - `previous_quarter_minus_one_debt`: same as above, latest quarter -1
 
