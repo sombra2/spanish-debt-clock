@@ -6,7 +6,7 @@ import credentials
 now = datetime.datetime.now().strftime('%d/%m/%Y %H:%M')
 cwd = os.path.dirname(os.path.realpath(__file__))
 
-inhabitants = 47326687 # https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176951&menu=ultiDatos&idp=1254735572981
+inhabitants = 47432805 # https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176951&menu=ultiDatos&idp=1254735572981
 gdp = 1202994 * 10**6 # https://datosmacro.expansion.com/pib/espana
 
 # input down here the data corresponding to the real debt published for the previous quarters
