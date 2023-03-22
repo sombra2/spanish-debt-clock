@@ -27,7 +27,7 @@ myStreamListener = MyStreamListener(
     access_token=access_token,
     access_token_secret=access_token_secret
 )
-myStreamListener.filter(follow=[api.get_user("your_bot_name").id_str], is_async=True)
+myStreamListener.filter(follow=[api.get_user(screen_name="your_bot_name").id_str], is_async=True)
 
 # Get recent tweets and their retweets
 tweets = api.user_timeline(screen_name="your_bot_name", count=20, include_rts=True)
