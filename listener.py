@@ -18,10 +18,10 @@ api = tweepy.API(auth)
 class MyStreamListener(tweepy.Stream):
     def on_follow(self, follower):
         # Send tweet to new follower
-        api.update_status(f"Gracias por seguirnos, @{follower.screen_name}!")
+        api.update_status(f"Thanks for following, @{follower.screen_name}!")
 
 # Create stream object and start listening
-myStreamListener = MyStreamListener(auth = api.auth)
+myStreamListener = MyStreamListener(consumer_key, consumer_secret, access_token, access_token_secret)
 myStreamListener.filter(track=["@your_bot_name"])
 
 # Get recent tweets and their retweets
