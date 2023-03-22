@@ -1,6 +1,7 @@
 # this is the listening script for users retweeting and new follows
 
 import tweepy
+import credentials
 
 consumer_key = credentials.consumer_key
 consumer_secret = credentials.consumer_secret
