@@ -12,7 +12,7 @@ gdp = 1328922 * 10**6 # https://datosmacro.expansion.com/pib/espana
 # input down here the data corresponding to the real debt published for the previous quarters
 # data extracted from: https://datosmacro.expansion.com/deuda/espana
 
-previous_quarter = datetime.datetime(2023, 03, 31) # the date in YYYYMMDD format corresponding to the last quarter the information is provided
+previous_quarter = datetime.datetime(2023, 3, 31) # the date in YYYYMMDD format corresponding to the last quarter the information is provided
 previous_quarter_debt = 1535262 * 10**6 
 previous_quarter_minus_one_debt = 1502501 * 10**6
 previous_quarter_minus_two_debt = 1503760 * 10**6
