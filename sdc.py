@@ -35,14 +35,16 @@ consumer_secret = credentials.consumer_secret
 access_token = credentials.access_token
 access_token_secret = credentials.access_token_secret
 
-# authentication of consumer key and secret
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
+# authentication
+client = tweepy.Client(
+                    bearer_token=credentials.bearer_token,
+                    consumer_key=credentials.consumer_key,
+                    consumer_secret=credentials.consumer_secret,
+                    access_token=credentials.access_token,
+                    access_token_secret=credentials.access_token_secret
+                    )
 
-# authentication of access token and secret
-auth.set_access_token(access_token, access_token_secret)
-api = tweepy.API(auth)
-
-api.update_status(status = '{} € total | '
+client.create_tweet(text = '{} € total | '
                            '{} € por habitante | '
                            '{}% del PIB | '
                            '{} #DeudaPublica'.format(debt_readable, debt_per_inhabitant_readable, percentage_readable, now))
