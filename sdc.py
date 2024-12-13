@@ -7,15 +7,15 @@ now = datetime.datetime.now().strftime('%d/%m/%Y %H:%M')
 cwd = os.path.dirname(os.path.realpath(__file__))
 
 inhabitants = 47615034 # https://www.ine.es/dyngs/INEbase/es/operacion.htm?c=Estadistica_C&cid=1254736176951&menu=ultiDatos&idp=1254735572981
-gdp = 1462070 * 10**6 # https://datosmacro.expansion.com/pib/espana
+gdp = 1498324 * 10**6 # https://datosmacro.expansion.com/pib/espana
 
 # input down here the data corresponding to the real debt published for the previous quarters
 # data extracted from: https://datosmacro.expansion.com/deuda/espana
 
-previous_quarter = datetime.datetime(2023, 12, 31) # the date in YYYYMMDD format (leading zeroes not allowed) corresponding to the last quarter the information is provided
-previous_quarter_debt = 1535385 * 10**6 
-previous_quarter_minus_one_debt = 1577266 * 10**6
-previous_quarter_minus_two_debt = 1568743 * 10**6
+previous_quarter = datetime.datetime(2024, 6, 30) # the date in YYYYMMDD format (leading zeroes not allowed) corresponding to the last quarter the information is provided
+previous_quarter_debt = 1626065 * 10**6 
+previous_quarter_minus_one_debt = 1614710 * 10**6
+previous_quarter_minus_two_debt = 1575374 * 10**6
 
 hours_per_quarter = int(91.25 * 24)
 average_variation_per_hour = (((previous_quarter_debt - previous_quarter_minus_one_debt) / hours_per_quarter) + ((previous_quarter_minus_one_debt - previous_quarter_minus_two_debt) / hours_per_quarter)) / 2
